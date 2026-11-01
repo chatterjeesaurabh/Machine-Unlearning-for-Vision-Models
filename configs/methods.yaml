@@ -1,0 +1,34 @@
+# Default unlearning hyperparameters (see records/00_plan.md §3 for paper sources and grids).
+# Structure: <method>: {common: {...}, class: {...}, subset_random: {...}}; scenario-type block overrides common.
+# stop_forget_acc: null | number | "retrain" (stop when forget acc <= Retrain's forget acc for the same scenario/seed).
+# Values marked PILOT are starting points that the pilot grid (seed 0) will update.
+
+GA:            # M1 Gradient Ascent  [Weight Saliency paper: 5 ep, lr in [1e-5, 1e-3]]
+  common: {epochs: 5, batch_size: 256, lr: 1.0e-4, momentum: 0.9, weight_decay: 5.0e-4, augment: true}   # lr PILOT
+  class: {stop_forget_acc: 0.0}
+  subset_random: {stop_forget_acc: retrain}
+
+GAGD:          # M2 Gradient Ascent + Descent  [Teacher-Student paper eq.4: beta 0.9999, 5 ep, lr 0.01; RUM: beta 0.85-0.99]
+  common: {epochs: 5, batch_size: 256, forget_batch_size: 256, lr: 0.01, beta: 0.99, grad_clip: 1.0, momentum: 0.9, weight_decay: 5.0e-4, augment: true}  # lr, beta PILOT
+  class: {}
+  subset_random: {}
+
+TS:            # M3a Teacher-Student  [Teacher-Student paper Table 3 (ResNet, CIFAR-10), lr 5e-4, wd 5e-4]
+  common: {lr: 5.0e-4, momentum: 0.9, weight_decay: 5.0e-4, kd_T: 4.0, alpha: 1.0, gamma: 1.0, augment: true}  # alpha (KL), gamma (CE) PILOT
+  class: {epochs: 3, msteps: 2, forget_batch_size: 512, retain_batch_size: 128, lr_decay_epochs: [3]}
+  subset_random: {epochs: 5, msteps: 5, forget_batch_size: 16, retain_batch_size: 64, lr_decay_epochs: [5]}
+
+RLrand:        # M3b-R Random Relabeling  [Weight Saliency paper: 10 ep, lr in [1e-3, 1e-1]]
+  common: {epochs: 10, batch_size: 256, lr: 0.01, momentum: 0.9, weight_decay: 5.0e-4, augment: true, use_retain: true}  # lr PILOT
+  class: {}
+  subset_random: {}
+
+RLbnd:         # M3b-B Boundary Relabeling  [Boundary paper / Weight Saliency paper: FGSM step 0.1, 10 ep, lr in [1e-6, 1e-4]]
+  common: {epochs: 10, batch_size: 256, lr: 1.0e-5, eps: 0.1, momentum: 0.9, weight_decay: 5.0e-4, augment: true}  # lr PILOT
+  class: {}
+  subset_random: {}
+
+TSjoint:       # M3a variant (ours): all three loss terms simultaneously (no alternation). Shares TS defaults.
+  common: {lr: 5.0e-4, momentum: 0.9, weight_decay: 5.0e-4, kd_T: 4.0, alpha: 1.0, gamma: 1.0, lam_f: 1.0, augment: true, epochs: 5, forget_batch_size: 128, retain_batch_size: 128}
+  class: {}
+  subset_random: {retain_batch_size: 64}
