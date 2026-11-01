@@ -10,9 +10,9 @@ We remove the influence of a *forget set* from a trained ResNet-18 without retra
 Gradient based Weight Saliency, against a retrained-from-scratch reference, and evaluate them with accuracy, a membership inference
 attack, embedding entanglement, linear probing, perturbed inputs, post-unlearning quantization and cost.
 
-- Short report (2 pages): [`report/short_report.pdf`](report/short_report.pdf)
-- Full report (20 pages): [`report/report.pdf`](report/report.pdf)
-- All experiment records (1,845 runs, tables, figures, method pages): [`records/`](records/) - start at [`records/README.md`](records/README.md)
+- Short report (2 pages): [`report/Report.pdf`](report/Report.pdf)
+- Full report (20 pages): [`report/Full_Report.pdf`](report/Full_Report.pdf)
+- All experiment records (1,845 runs, tables, figures, method pages): [`records/`](records/).
 
 ## Headline results (3 seeds, mean; avg_gap = mean |difference to Retrain| over forget / retain / test accuracy and MIA, lower is better)
 
