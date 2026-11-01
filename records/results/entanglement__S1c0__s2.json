@@ -1,0 +1,46 @@
+{
+ "scenario": "S1c0",
+ "seed": 2,
+ "global_ES": 2.2115495204925537,
+ "n_forget": 4500,
+ "n_retain": 40500,
+ "k10": {
+  "sigma": 0.49253228306770325,
+  "E_mean": 0.0,
+  "E_quantiles": [
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0
+  ],
+  "mean_dist_retain_mean": 5.114882946014404,
+  "corr_E_vs_dist_spearman": -0.011553924126119709
+ },
+ "k50": {
+  "sigma": 0.5698440670967102,
+  "E_mean": 0.0,
+  "E_quantiles": [
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0
+  ],
+  "mean_dist_retain_mean": 5.4554972648620605,
+  "corr_E_vs_dist_spearman": -0.009842597753543922
+ },
+ "k100": {
+  "sigma": 0.6106616258621216,
+  "E_mean": 0.0,
+  "E_quantiles": [
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0
+  ],
+  "mean_dist_retain_mean": 5.604730129241943,
+  "corr_E_vs_dist_spearman": -0.010229445114211281
+ }
+}

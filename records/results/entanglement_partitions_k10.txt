@@ -1,0 +1,145 @@
+ scenario   method     mask partition  forget_acc  gap_forget_acc  gap_mia_acc
+     S1c0       GA     none      high        2.27            2.27         1.65
+     S1c0       GA     none       low        5.84            5.84         0.97
+     S1c0       GA     none    medium        7.87            7.87         2.57
+     S1c0       GA saliency      high        2.60            2.60         1.63
+     S1c0       GA saliency       low        7.07            7.07         1.50
+     S1c0       GA saliency    medium        9.24            9.24         2.87
+     S1c0     GAGD     none      high        0.00            0.00         1.60
+     S1c0     GAGD     none       low        0.00            0.00         0.87
+     S1c0     GAGD     none    medium        0.00            0.00         2.03
+     S1c0     GAGD saliency      high        0.00            0.00         1.80
+     S1c0     GAGD saliency       low        0.00            0.00         1.40
+     S1c0     GAGD saliency    medium        0.00            0.00         0.50
+     S1c0    RLbnd     none      high        7.27            7.27         4.93
+     S1c0    RLbnd     none       low       36.02           36.02         8.43
+     S1c0    RLbnd     none    medium       27.49           27.49         8.05
+     S1c0    RLbnd saliency      high        0.40            0.40         2.67
+     S1c0    RLbnd saliency       low        8.02            8.02        11.82
+     S1c0    RLbnd saliency    medium        1.24            1.24         8.95
+     S1c0   RLrand     none      high        0.00            0.00         5.28
+     S1c0   RLrand     none       low        0.00            0.00         4.85
+     S1c0   RLrand     none    medium        0.00            0.00         3.45
+     S1c0   RLrand saliency      high        0.00            0.00         5.48
+     S1c0   RLrand saliency       low        0.00            0.00         4.12
+     S1c0   RLrand saliency    medium        0.00            0.00         3.68
+     S1c0       TS     none      high        0.04            0.04         0.83
+     S1c0       TS     none       low        0.27            0.27         1.80
+     S1c0       TS     none    medium        0.67            0.67         5.13
+     S1c0       TS saliency      high        1.02            1.02         1.80
+     S1c0       TS saliency       low        2.22            2.22         0.68
+     S1c0       TS saliency    medium        4.44            4.44         5.55
+     S1c0 original     none      high      100.00          100.00         7.98
+     S1c0 original     none       low      100.00          100.00         5.63
+     S1c0 original     none    medium      100.00          100.00         8.23
+     S1c0  retrain     none      high        0.00            0.00         0.00
+     S1c0  retrain     none       low        0.00            0.00         0.00
+     S1c0  retrain     none    medium        0.00            0.00         0.00
+S2k359p10       GA     none      high       87.33            4.96         9.52
+S2k359p10       GA     none       low       82.96            8.67         9.44
+S2k359p10       GA     none    medium       82.89            8.07         7.81
+S2k359p10       GA saliency      high       87.33            4.96         9.59
+S2k359p10       GA saliency       low       83.41            8.22         9.44
+S2k359p10       GA saliency    medium       83.19            7.78         7.89
+S2k359p10     GAGD     none      high       93.56            1.26         7.89
+S2k359p10     GAGD     none       low       91.04            1.19         8.48
+S2k359p10     GAGD     none    medium       89.63            1.33         6.74
+S2k359p10     GAGD saliency      high       94.22            1.93         8.30
+S2k359p10     GAGD saliency       low       92.22            1.33         8.70
+S2k359p10     GAGD saliency    medium       90.52            1.19         7.00
+S2k359p10    RLbnd     none      high       76.37           15.93         9.04
+S2k359p10    RLbnd     none       low       70.30           21.33         8.96
+S2k359p10    RLbnd     none    medium       74.00           16.96         8.44
+S2k359p10    RLbnd saliency      high       75.93           16.37         9.11
+S2k359p10    RLbnd saliency       low       69.85           21.78         8.85
+S2k359p10    RLbnd saliency    medium       73.93           17.04         8.41
+S2k359p10   RLrand     none      high       96.37            4.07         5.59
+S2k359p10   RLrand     none       low       94.96            3.33         6.52
+S2k359p10   RLrand     none    medium       94.15            3.19         4.81
+S2k359p10   RLrand saliency      high       97.19            4.89         7.00
+S2k359p10   RLrand saliency       low       96.96            5.33         7.89
+S2k359p10   RLrand saliency    medium       97.56            6.59         6.89
+S2k359p10       TS     none      high       99.93            7.63         7.56
+S2k359p10       TS     none       low       99.85            8.22         9.26
+S2k359p10       TS     none    medium       99.70            8.74         7.52
+S2k359p10       TS saliency      high       99.85            7.56         7.96
+S2k359p10       TS saliency       low       99.78            8.15         8.96
+S2k359p10       TS saliency    medium       99.78            8.81         7.30
+S2k359p10 original     none      high      100.00            7.70         7.04
+S2k359p10 original     none       low      100.00            8.37         8.85
+S2k359p10 original     none    medium      100.00            9.04         7.70
+S2k359p10  retrain     none      high       92.30            0.00         0.00
+S2k359p10  retrain     none       low       91.63            0.00         0.00
+S2k359p10  retrain     none    medium       90.96            0.00         0.00
+S2k359p30       GA     none      high       86.89            3.90         9.49
+S2k359p30       GA     none       low       87.68            3.83         9.02
+S2k359p30       GA     none    medium       87.85            2.44         9.31
+S2k359p30       GA saliency      high       87.14            3.65         9.46
+S2k359p30       GA saliency       low       87.90            3.60         9.05
+S2k359p30       GA saliency    medium       88.17            2.12         9.30
+S2k359p30     GAGD     none      high       92.32            1.53         9.09
+S2k359p30     GAGD     none       low       93.16            1.90         8.73
+S2k359p30     GAGD     none    medium       93.28            2.99         8.89
+S2k359p30     GAGD saliency      high       93.04            2.25         9.15
+S2k359p30     GAGD saliency       low       93.85            2.35         8.68
+S2k359p30     GAGD saliency    medium       93.70            3.41         9.07
+S2k359p30    RLbnd     none      high       75.63           15.16         9.44
+S2k359p30    RLbnd     none       low       76.05           15.46         8.93
+S2k359p30    RLbnd     none    medium       74.94           15.36         9.01
+S2k359p30    RLbnd saliency      high       74.79           16.00         9.37
+S2k359p30    RLbnd saliency       low       75.83           15.68         9.04
+S2k359p30    RLbnd saliency    medium       74.35           15.95         8.73
+S2k359p30   RLrand     none      high       87.63            3.16         3.02
+S2k359p30   RLrand     none       low       89.80            1.70         3.25
+S2k359p30   RLrand     none    medium       88.57            1.73         2.91
+S2k359p30   RLrand saliency      high       93.98            3.19         5.05
+S2k359p30   RLrand saliency       low       94.52            3.01         4.63
+S2k359p30   RLrand saliency    medium       94.54            4.25         4.80
+S2k359p30       TS     none      high       99.46            8.67         7.12
+S2k359p30       TS     none       low       99.51            8.00         6.22
+S2k359p30       TS     none    medium       99.78            9.48         6.93
+S2k359p30       TS saliency      high       98.52            7.73         6.60
+S2k359p30       TS saliency       low       98.86            7.36         6.00
+S2k359p30       TS saliency    medium       99.04            8.74         6.25
+S2k359p30 original     none      high      100.00            9.21         8.95
+S2k359p30 original     none       low      100.00            8.49         8.17
+S2k359p30 original     none    medium      100.00            9.70         8.32
+S2k359p30  retrain     none      high       90.79            0.00         0.00
+S2k359p30  retrain     none       low       91.51            0.00         0.00
+S2k359p30  retrain     none    medium       90.30            0.00         0.00
+S2k359p50       GA     none      high       74.76           13.93         8.31
+S2k359p50       GA     none       low       75.47           13.91         8.17
+S2k359p50       GA     none    medium       73.11           15.04         7.73
+S2k359p50       GA saliency      high       75.27           13.41         8.30
+S2k359p50       GA saliency       low       75.93           13.45         8.21
+S2k359p50       GA saliency    medium       73.45           14.70         7.81
+S2k359p50     GAGD     none      high       89.29            1.23         8.34
+S2k359p50     GAGD     none       low       89.35            1.01         7.92
+S2k359p50     GAGD     none    medium       89.14            0.99         8.47
+S2k359p50     GAGD saliency      high       90.44            1.76         8.59
+S2k359p50     GAGD saliency       low       90.98            1.60         8.27
+S2k359p50     GAGD saliency    medium       90.59            2.44         8.83
+S2k359p50    RLbnd     none      high       75.53           13.16         9.70
+S2k359p50    RLbnd     none       low       75.99           13.39         9.53
+S2k359p50    RLbnd     none    medium       73.81           14.34         9.41
+S2k359p50    RLbnd saliency      high       75.84           12.84         9.39
+S2k359p50    RLbnd saliency       low       76.52           12.86         9.25
+S2k359p50    RLbnd saliency    medium       74.27           13.88         8.94
+S2k359p50   RLrand     none      high       81.53            7.16         1.57
+S2k359p50   RLrand     none       low       82.06            7.32         1.38
+S2k359p50   RLrand     none    medium       79.61            8.53         0.97
+S2k359p50   RLrand saliency      high       89.59            1.17         3.19
+S2k359p50   RLrand saliency       low       88.73            1.69         2.67
+S2k359p50   RLrand saliency    medium       88.58            2.36         3.16
+S2k359p50       TS     none      high        0.00           88.68         0.61
+S2k359p50       TS     none       low        0.00           89.38         1.10
+S2k359p50       TS     none    medium        0.00           88.15         0.24
+S2k359p50       TS saliency      high        0.00           88.68         0.68
+S2k359p50       TS saliency       low        0.00           89.38         0.64
+S2k359p50       TS saliency    medium        0.00           88.15         0.53
+S2k359p50 original     none      high      100.00           11.32         8.67
+S2k359p50 original     none       low      100.00           10.62         8.23
+S2k359p50 original     none    medium      100.00           11.85         9.05
+S2k359p50  retrain     none      high       88.68            0.00         0.00
+S2k359p50  retrain     none       low       89.38            0.00         0.00
+S2k359p50  retrain     none    medium       88.15            0.00         0.00
